@@ -1,6 +1,6 @@
 node{
     stage('Welcome'){
-        scm
+        checkout scm
         echo "This is welcome"
         echo "${env.BRANCH_NAME}"
     }
